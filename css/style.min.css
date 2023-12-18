@@ -109,7 +109,7 @@ section {
 @media (max-width: 767px) {
   .nav-mastfoot {
     flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center items horizontally on smaller screens */
+   
   }
 
   .nav-mastfoot .nav-link {
