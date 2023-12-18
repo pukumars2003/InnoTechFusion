@@ -106,6 +106,11 @@ section {
   font-size: 2rem;
   color: #fff;
 }
+.navbar-toggler {
+  font-size: 2rem;
+  color: #fff;
+}
+
 /* Add this CSS to align logos beside each other */
 .nav-mastfoot {
   display: flex;
@@ -135,6 +140,7 @@ section {
     font-size: 14px;
   }
 }
+
 .jumbotron {
   color: #fff;
   padding-top: 80px;
@@ -196,7 +202,7 @@ section {
   display: inline-block;
   border: 15px solid #fff;
   padding: 30px;
-  font-size: 9rem;
+  font-size: 6rem;
   opacity: 1;
   animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
   animation-delay: .8s;
@@ -205,7 +211,6 @@ section {
 .jumbotron-single h2 {
   font-size: 3rem !important;
 }
-
 
 .jumbotron h2 {
   line-height: .9;
@@ -219,9 +224,6 @@ section {
   animation-delay: .8s;
 }
 
-.jumbotron-single h2 {
-  font-size: 3rem !important;
-}
 
 
 .overlay {
