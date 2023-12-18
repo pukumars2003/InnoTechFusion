@@ -92,7 +92,10 @@ section {
 .navbar-nav .nav-link {
   color: #fff;
   transition: .3s ease;
+
 }
+
+
 
 .navbar-nav:hover li a {
   opacity: 0.5;
@@ -106,23 +109,28 @@ section {
   font-size: 2rem;
   color: #fff;
 }
+
 .navbar-toggler {
   font-size: 2rem;
   color: #fff;
 }
 
-/* Add this CSS to align logos beside each other */
-.nav-mastfoot {
-  display: flex;
-  align-items: center;
-}
-
-.nav-mastfoot .nav-link {
-  margin-right: 15px;
-}
-
-/* Add this CSS to make the navigation header smaller on mobile devices */
+/* Adjustments for logos and navigation header on mobile devices */
 @media (max-width: 767px) {
+  .nav-mastfoot {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    /* Remove margin to reduce space between logos */
+  }
+
+  .nav-mastfoot .nav-link {
+    margin-right: 1px;
+    /* Adjust margin between logos */
+  }
+
   #header-navbar {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
@@ -139,18 +147,79 @@ section {
   .navbar-nav .nav-link {
     font-size: 14px;
   }
+}
 
-  /* Align logos beside each other on smaller screens */
-  .nav-mastfoot {
-    flex-direction: column;
-    align-items: flex-start;
+
+/* Define a class for the logo images */
+.logo-image {
+  max-width: 100%;
+  /* Make the image responsive */
+  height: auto;
+  padding: 10px;
+  /* Maintain aspect ratio */
+}
+
+/* Apply the class to the logo images in your HTML */
+.navbar-logo img.logo-image {
+  align-self: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+
+    border-right: 2px;
+    padding-right: 10px;
   }
 
-  .nav-mastfoot .nav-link {
-    margin-right: 0;
-    margin-bottom: 10px;
+  .navbar-logo img.logo-image {
+    align-self: flex-start;
+  }
+
+  #header-navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-toggler {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
   }
 }
+
+/* Media query for larger screens (PC) */
+@media (min-width: 768px) {
+  .navbar-logo {
+    margin-right: 10px;
+    border-right: none;
+    padding: 10px;
+    display: flex;
+    /* Use flexbox to align items in one line */
+    align-items: center;
+    /* Align items vertically in the center */
+  }
+
+  .navbar-logo img.logo-image {
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add margin between the images if needed */
+  }
+}
+
+
+
+
 
 
 .jumbotron {
