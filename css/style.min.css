@@ -124,22 +124,34 @@ section {
 /* Add this CSS to make the navigation header smaller on mobile devices */
 @media (max-width: 767px) {
   #header-navbar {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   .navbar-brand {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .navbar-toggler {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .navbar-nav .nav-link {
     font-size: 14px;
   }
+
+  /* Align logos beside each other on smaller screens */
+  .nav-mastfoot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-mastfoot .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
+
 
 .jumbotron {
   color: #fff;
